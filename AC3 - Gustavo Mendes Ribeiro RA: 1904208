@@ -1,0 +1,79 @@
+# <h1>**Comandos de GIT**</h1>
+!(https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-icons.com%2Fpt%2Ficone%2Fgit-original-a-marca-logo%2F146510&psig=AOvVaw3TBl-DMaztzGCZNSJlyc9I&ust=1602549027425000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDTx7zmrewCFQAAAAdAAAAABAD)
+1.git log: faz com que o Git exiba o histórico de todas as mudanças realizadas no projeto;
+#### <h4>*Parâmetros:* </h4>
+*--source:*
+	Imprime o nome ref fornecido na linha de comando pelo qual cada commit foi alcançado.
+*--full-diff: *
+	Sem este sinalizador, git log -p <path>...mostra os commits que tocam os caminhos especificados e diffs sobre os mesmos caminhos especificados. Com isso, o diff completo é mostrado para commits que tocam os caminhos especificados; isto significa que "<caminho>…" limita apenas os commits, e não limita a diff para aqueles commits.
+Observe que isso afeta todos os tipos de saída baseados em diff, por exemplo, aqueles produzidos por --stat, etc.
+*--log-size:*
+	 Inclua uma linha “tamanho do log <número>” na saída para cada confirmação, onde <número> é o comprimento da mensagem de confirmação em bytes. Destina-se a acelerar ferramentas que leem mensagens de log de git log saída, permitindo que aloquem espaço com antecedência.
+2. git reset:  Este comando é usado para remover arquivos de um projeto, bastando digitar o nome dele (git reset exemplo.txt);
+#### <h4>*Parâmetros:* </h4>
+*--soft:*
+Não toca no arquivo de índice ou na árvore de trabalho de forma alguma (mas redefine o cabeçalho para <commit>, assim como todos os modos fazem). Isso deixa todos os seus arquivos alterados "Alterações a serem confirmadas", como git status diria.
+*--mixed:*
+Reinicia o índice, mas não a árvore de trabalho (ou seja, os arquivos alterados são preservados, mas não marcados para confirmação) e relata o que não foi atualizado. Esta é a ação padrão.
+
+*--hard:*
+Reinicia o índice e a árvore de trabalho. Quaisquer alterações nos arquivos rastreados na árvore de trabalho desde então <commit>são descartadas.
+
+3. git clone: realiza a clonagem de um projeto para o computador (git clone https://github.com/usuario/projeto.git);
+#### <h4>*Parâmetros:* </h4>
+
+*-l*
+*--local: *
+ Quando o repositório a partir do qual clonar está em uma máquina local, este sinalizador ignora o mecanismo de transporte normal "ciente do Git" e clona o repositório fazendo uma cópia do HEAD e de tudo em objetos e diretórios refs. Os arquivos **no .git/objects/**diretório possuem links físicos para economizar espaço quando possível.
+	
+*-q*
+*--quiet:*
+	Opere em silêncio. O progresso não é relatado ao fluxo de erro padrão.
+
+
+*-n*
+*--no-checkout:*
+Nenhuma verificação de HEAD é realizada após a conclusão do clone.
+
+### <h3> Referências: </h3>
+*Comando git log:<https://git-scm.com/docs/git-log>
+*Comando git reset: <https://git-scm.com/docs/git-reset>
+*Comando git clone: <https://git-scm.com/docs/git-clone>
+
+#<h1>**Comandos de LINUX**</h1>
+!( https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-icons.com%2Fpt%2Ficone%2FLinux%2F81610&psig=AOvVaw2LcK3EKLf8As51GpSRuvxw&ust=1602549001814000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKC-wa_mrewCFQAAAAAdAAAAABAD)
+
+**1.ls:** listagem de arquivos
+#### <h4>*Parâmetros:* </h4>
+**a:**lista todos os arquivos do diretório (inclusive os arquivos ocultos).
+
+**-h:** usado junto com a opção -l, exibe o tamanho do arquivo em formato mais compreensível para o ser humano.
+
+**-i :**lista o número do índice (inode) de cada arquivo. Se dois arquivos em um mesmo sistema de arquivos possuem o mesmo inode, então ele estão vinculados a um mesmo arquivo físico (ligação direta).
+
+**2.sudo:** permissões especiais
+#### <h4>*Parâmetros:* </h4>
+**-h:**exibe as opções do comando.
+
+**-l : **lista os comandos permitidos (e os comandos proibidos) para o usuário no ambiente de trabalho atual.
+
+**-u usuário :** o sudo executa o comando com os privilégios do usuário especificado.
+
+**-V : **fornece informações sobre o comando.
+
+
+**3.grep:** buscas em textos
+#### <h4>*Parâmetros:* </h4>
+*-a, −−text : trata arquivos binários como se fossem arquivos de texto.
+
+*-c : imprime somente a contagem das linhas com expressão.
+
+*-e padrão : define qual padrão deve ser procurado (usado apenas quando a pesquisa usa mais de um padrão).
+
+
+### <h3>Referências:</h3>
+
+* Comando ls: <https://guialinux.uniriotec.br/ls/>
+* Comando sudo: <https://guialinux.uniriotec.br/sudo/>
+* Comando grep: <https://guialinux.uniriotec.br/grep/>
+
